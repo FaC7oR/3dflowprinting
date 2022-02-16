@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D FlowPrinting</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../layout.css">
+
+    <!-- PARTE DEPENDIENTE DE layout.css -->
+    <!-- <link rel="stylesheet" href="../layout.css"> -->
+
+    <!-- PARTE DEPENDIENTE DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <!-- PARTE DEPENDIENTE DE layout.css -->
+    <!--
     <div class="easteregg">Your resolution is very chikita for this website!</div>
 
     <header>
@@ -41,6 +48,51 @@
         <div>3D FlowPrinting - Impresiones 3D profesionales</div>
         <div class="footerflex"><a>Términos y condiciones</a><a>Política de privacidad</a><a>Preguntas frecuentes</a></div>
     </footer>
+    -->
+
+    <!-- PARTE DEPENDIENTE DE BOOTSTRAP-->
+    <div class="d-flex">
+        <header class="d-flex flex-column flex-lg-row align-items-center flex-grow-1">
+            <div class="d-lg-inline-block col-lg-4" id="titulo">3D FlowPrinting</div>
+            <div class="d-flex flex-row d-lg-inline-flex flex-lg-row justify-content-center col-lg-8" id="search">
+                <input type="text" placeholder="¿Qué estás buscando?" class="buscador fs-4">
+                <input type="image" id="searchbutton" src="../img/search.png" class="searchbutton">
+            </div>
+        </header>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-12 col-md-3">
+                <ul>
+                    <li><a class="text-decoration-none" href="../index.html">Menú Principal</a></li>
+                    <li><a class="text-decoration-none" href="../productos/productos.html">Productos</a></li>
+                    <li><a class="text-decoration-none" href="carrito.html">Carrito</a></li>
+                    <li><a class="text-decoration-none" href="../tecnico/tecnico.html">Impresión 3D</a></li>
+                    <li><a class="text-decoration-none" href="../contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        
+            <section class="d-flex flex-column align-items-center col-sm-12 col-md-9 p-3 chart">
+                <h1>Tu Carrito</h1>
+                <h3>Ups! Parece que aún no hay cosas en tu Carrito...</h3><br>
+                <h3>Llénalo en <a href="../productos/productos.html">productos</a></h3>
+            </section>
+        </div>
+    </div>
+
+    <div class="d-flex">
+        <footer class="d-flex flex-column align-items-center flex-grow-1">
+            <div class="pt-4">3D FlowPrinting - Impresiones 3D profesionales</div>
+            <div class="pb-3 d-flex flex-column flex-lg-row align-items-center">
+                <a>Términos y condiciones</a>
+                <a class="m-4">Política de privacidad</a>
+                <a>Preguntas frecuentes</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
