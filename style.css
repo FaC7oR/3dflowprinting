@@ -307,8 +307,6 @@ ul{
     padding: 12px 12px 0px 12px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
-    box-shadow: 4px 4px rgb(206, 206, 206);
-    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .productos{

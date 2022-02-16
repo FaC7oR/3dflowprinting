@@ -1,5 +1,9 @@
+.item{
+    box-shadow: 4px 4px rgb(206, 206, 206);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
 .item:hover{
     transform: scale(1.12,1.12);
     box-shadow: 10px 10px rgb(206, 206, 206);
-    /*transition: transform 0.5s;*/
 }
