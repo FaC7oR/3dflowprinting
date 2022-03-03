@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* DEFINIMOS UN MAPA CON LOS COLORES CLÁSICOS DEL SITIO */
+
+$paleta:(
+    letterclr: white,
+    skybluebckgr: rgb(0, 162, 255),
+    letterspc: 3px,
+    txtshdw: 2px 2px #000000,
+);
+
+/* DEFINIMOS UN MIXIN PARA CONFIGURAR LOS TAMAÑOS DE LOS OBJETOS */
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+/* DEFINIMOS LAS CARACTERISTICAS RESPONSIVE PARA 320px */
+
+@media screen and (min-width: 320px){
+
+    div{
+        
+        #titulo{
+            width: auto;
+            text-align: center;
+        }
+
+        .footerflex a{
+            margin: 0px;
+        }
+
+    }
+    
+    header{
+        padding-left: 0px;
+    }   
+
+    li{
+        padding-left: 0px;
+    }
+    
+    section{ 
+    
+        img{
+            @include sizes(250px, 250px);
+        }
+
+        .chart{
+            height: calc(100vh - 202px);
+        }
+
+        .contactform{
+            height: calc(100vh - 202px);
+        }
+
+        .technical{
+            height: calc(100vh - 202px);
+        }  
+
+    }
+
+    #consulta{
+        @include sizes(13em, 8em);
+    }
+
+    .buscador{
+        margin-top: 0px;
+    }
+
+    .searchbutton{
+        margin-top: 0px;
+    }
+
+    .ytvideo{
+        @include sizes(280px, 158px);
+    }
+
+}
+
+/* DEFINIMOS LAS CARACTERISTICAS RESPONSIVE PARA 768px */
+
+@media screen and (min-width: 768px){
+
+    div{
+        
+        #titulo{
+            width: auto;
+            text-align: center;
+        }
+
+        .footerflex{
+
+            a{
+                margin: 0px 12px 0px 12px;
+            }
+
+        }
+    }
+    
+    header{
+        padding-left: 16px;
+    }   
+
+    li{
+        padding-left: 16px;
+    }
+    
+    section{ 
+    
+        img{
+            @include sizes(400px, 400px);
+        }
+
+        .chart{
+            height: calc(100vh - 162px);
+        }
+
+        .contactform{
+            height: calc(100vh - 162px);
+        }
+
+        .technical{
+            height: calc(100vh - 162px);
+        }
+
+    }
+
+    #consulta{
+        @include sizes(18em, 10em);
+    }
+
+    .buscador{
+        margin-top: 0px;
+    }
+
+    .searchbutton{
+        margin-top: 0px;
+    }
+
+    .ytvideo{
+        @include sizes(560px, 315px);
+    }
+       
+}
+
+/* DEFINIMOS LAS CARACTERISTICAS RESPONSIVE PARA 1200px */
+
+@media screen and (min-width: 1200px){
+
+    div{
+        
+        #titulo{
+            width: 300px;
+        }
+
+        .footerflex a{
+            margin: 0px 12px 0px 12px;
+        }
+
+    }
+    
+    header{
+        padding-left: 16px;
+    }   
+
+    li{
+        padding-left: 16px;
+    }
+    
+    section{ 
+    
+        img{
+            @include sizes(400px, 400px);
+        }
+
+        .chart{
+            height: calc(100vh - 162px);
+        }
+
+        .contactform{
+            height: calc(100vh - 162px);
+        }
+
+        .technical{
+            height: calc(100vh - 162px);
+        }
+
+    }
+
+    #consulta{
+        @include sizes(18em, 10em);
+    }
+
+    .buscador{
+        margin-top: 7px;
+    }
+
+    .searchbutton{
+        margin-top: 7px;
+    }
+
+    .ytvideo{
+        @include sizes(560px, 315px);
+    }   
+
+}
+
+/* DEFINIMOS LAS CARACTERISTICAS GENERALES */
+
+a{
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+body{
+    font-family: Oswald, sans-serif;
+}
+
+footer{
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    background-color: rgb(204, 204, 204);
+    color: rgb(102, 102, 102);
+
+    div a{
+        padding-top: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        color: rgb(102, 102, 102);
+    }
+
+}
+
+header{
+    font-family: 'Bangers', cursive;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: map-get($paleta, skybluebckgr);
+    color: map-get($paleta, letterclr);
+    letter-spacing: map-get($paleta, txtshdw);
+    text-shadow: map-get($paleta, letterspc);
+}
+
+li{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(133, 133, 133);
+    border-bottom-width: 1px;
+}
+
+nav{
+    background-color: rgb(32, 32, 32);
+}
+
+section{
+
+    background-color: rgb(238, 238, 238);
+    padding: 12px 12px 0px 12px;
+    text-align: justify;
+
+    h1{
+        margin-bottom: 12px;
+    }
+    
+    img{
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+
+    .chart h3 a{
+        color: map-get($paleta, skybluebckgr);
+    }   
+
+    .contactdescription{
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+
+}
+
+ul{
+    list-style: none;
+}
+
+.buscador{
+    margin-left: 16px;
+    @include sizes(260px, 24px);
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+}
+
+.buybutton{
+    font-family: Oswald, sans-serif;
+    font-size: 16px;
+    border-style: solid;
+    color: map-get($paleta, letterclr);
+    background-color: map-get($paleta, skybluebckgr);
+    border-color: map-get($paleta, skybluebckgr);
+    border-radius: 16px;
+    padding: 0px 8px 0px 8px;
+    height: 32px;
+    margin-bottom: 24px;
+    
+}
+
+.formbutton{
+    @extend .buybutton;
+    margin: 12px 0px 12px 0px;
+}
+
+.item{
+    margin: 0px 24px 56px 24px;
+    padding: 12px 12px 0px 12px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+}
+
+.productos{
+    margin-top: 24px;
+    margin-bottom: -12px;
+}
+
+.searchbutton{
+    @include sizes(24px, 24px);
+}
