@@ -228,6 +228,7 @@ footer{
 
 div#titulo{
     grid-area: titulo;
+    justify-self: center;
 }
 
 div#search{
